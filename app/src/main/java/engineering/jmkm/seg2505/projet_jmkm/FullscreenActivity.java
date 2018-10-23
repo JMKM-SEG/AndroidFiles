@@ -7,6 +7,13 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
+import android.os.Bundle;
+import android.app.Activity;
+import android.content.Intent;
+import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -87,7 +94,7 @@ public class FullscreenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_fullscreen);
+        setContentView(R.layout.mainactivity_fullscreen);
 
         mVisible = true;
         mControlsView = findViewById(R.id.fullscreen_content_controls);
@@ -107,7 +114,22 @@ public class FullscreenActivity extends AppCompatActivity {
         // while interacting with the UI.
         findViewById(R.id.btn00).setOnTouchListener(mDelayHideTouchListener);
         findViewById(R.id.btn01).setOnTouchListener(mDelayHideTouchListener);
+
+        Button button;
+
+        // Locate the button in activity_main.xml
+        button = findViewById(R.id.btn00);
+
+        // Capture button clicks
+        button.setOnClickListener(new OnClickListener() {
+            public void onClick(View arg0) {
+
+                // Start NewActivity.class
+                Intent myIntent = new Intent(FullscreenActivity.this, MainActivity.class); startActivity(myIntent);
+            }
+        });
     }
+
 
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
