@@ -59,4 +59,20 @@ public class UserAccount {
     public String getUserName() {
         return userName;
     }
+
+    public void setNameOfCity(String nameOfCity) {
+        this.nameOfCity = nameOfCity;
+    }
+
+    public String getNameOfCity() {
+        return nameOfCity;
+    }
+
+    public void setNameOfCountry(String nameOfCountry) {
+        this.nameOfCountry = nameOfCountry;
+    }
+
+    public String getNameOfCountry() {
+        return nameOfCountry;
+    }
 }

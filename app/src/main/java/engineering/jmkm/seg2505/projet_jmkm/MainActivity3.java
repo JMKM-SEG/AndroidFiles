@@ -17,9 +17,9 @@ public class MainActivity3 extends AppCompatActivity {
         setContentView(R.layout.activity_main3);
 
 
-        final EditText et=(EditText) findViewById(R.id.editText17);
-        final EditText es=(EditText) findViewById(R.id.editText19);
-        Button bt=(Button) findViewById(R.id.button);
+        final EditText et=(EditText) findViewById(R.id.editText6);
+        final EditText es=(EditText) findViewById(R.id.editText8);
+        Button bt=(Button) findViewById(R.id.btn06);
         bt.setOnClickListener(new View.OnClickListener() {
 
             @Override
