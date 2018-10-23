@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-
+    Intent intent;
     Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,25 +28,29 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.btn02:
                 if (checked) {
-                    Intent intent = new Intent(getApplicationContext(), MainActivity2.class);
-                    startActivityForResult(intent, 0);
+                    intent = new Intent(getApplicationContext(), MainActivity2.class);
                 }
+                break;
             case R.id.btn03:
-                if (checked)
-                    break;
+                if (checked) {
+                    intent = new Intent(getApplicationContext(), MainActivity3.class);
+
+                }
+                break;
             case R.id.btn04:
                 if (checked) {
-                    //MainActivity.this.finish();
-                    //System.exit(0);
-                    break;
+                    intent = new Intent(getApplicationContext(), MainActivity4.class);
                 }
+                break;
+        }
+    }
+    public void toRegistration(View view){
+        if (intent == null){
+            Toast toast = Toast.makeText(getApplicationContext(), "Please select an option", Toast.LENGTH_LONG);
+            toast.show();
+        }else {
+            startActivityForResult(intent, 0);
         }
     }
 
-    /*public void openAdministrator(View view){
-        Intent intent = new Intent(getApplicationContext(), MainActivity2.class);
-        startActivityForResult(intent,0);
-    }*/
 }
- //Toast toast = Toast.makeText(context, "", Toast.LENGTH_LONG);
-//toast.show();

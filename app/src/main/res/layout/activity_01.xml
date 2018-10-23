@@ -47,14 +47,14 @@
             android:layout_weight="1"
             android:clickable="true"
             android:onClick="onRadioButtonClicked"
-            android:text="ADMINISTRATOR"
-            tools:onClick="openAdministrator" />
+            android:text="ADMINISTRATOR" />
 
         <RadioButton
             android:id="@+id/btn03"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:clickable="true"
             android:onClick="onRadioButtonClicked"
             android:text="HOME OWNER" />
 
@@ -63,8 +63,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:clickable="true"
             android:onClick="onRadioButtonClicked"
             android:text="SERVICE PROVIDER" />
+
     </RadioGroup>
+
+    <Button
+        android:id="@+id/btn05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="146dp"
+        android:layout_marginLeft="146dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginRight="145dp"
+        android:layout_marginBottom="135dp"
+        android:layout_weight="1"
+        android:onClick="toRegistration"
+        android:text="Continue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
 </android.support.constraint.ConstraintLayout>

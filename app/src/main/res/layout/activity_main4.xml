@@ -4,14 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2">
+    tools:context=".MainActivity4">
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Main3Activity"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        tools:context=".Main3Activity">
 
         <TextView
             android:id="@+id/textView8"
@@ -42,7 +40,7 @@
             android:layout_marginEnd="138dp"
             android:layout_marginRight="138dp"
             android:layout_marginBottom="57dp"
-            android:text="ADMINISTRATOR"
+            android:text="SERVICE PROVIDER"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -55,11 +53,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="85dp"
             android:layout_marginLeft="85dp"
-            android:layout_marginTop="62dp"
+            android:layout_marginTop="60dp"
             android:layout_marginEnd="84dp"
             android:layout_marginRight="84dp"
             android:layout_marginBottom="8dp"
-            android:capitalize="sentences"
             android:ems="10"
             android:hint="First name "
             android:inputType="textCapWords|textPersonName"
@@ -99,6 +96,7 @@
             android:layout_marginBottom="8dp"
             android:ems="10"
             android:hint="Username"
+            android:inputType="text"
             app:layout_constraintBottom_toTopOf="@+id/editText21"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -142,19 +140,20 @@
             app:layout_constraintTop_toBottomOf="@+id/editText19" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="85dp"
             android:layout_marginLeft="85dp"
-            android:layout_marginTop="14dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="84dp"
             android:layout_marginRight="84dp"
-            android:layout_marginBottom="23dp"
+            android:layout_marginBottom="19dp"
             android:onClick="createAccount"
             android:text="Create"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editText21" />
     </android.support.constraint.ConstraintLayout>
