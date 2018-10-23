@@ -7,13 +7,17 @@ public class UserAccount {
     private String eMail;
     private String phoneNumber;
     private String userName;
+    private String nameOfCity;
+    private String nameOfCountry;
 
-    public UserAccount(String firstName,String lastName, String eMail,String phoneNumber, String userName){
+    public UserAccount(String firstName,String lastName, String eMail,String phoneNumber, String userName, String nameOfCountry, String nameOfCity){
         this.firstName = firstName;
         this.lastName = lastName;
         this.eMail = eMail;
         this.phoneNumber = phoneNumber;
         this.userName = userName;
+        this.nameOfCity = nameOfCity;
+        this.nameOfCountry =  nameOfCountry;
     }
 
     public void setFirstName(String firstName) {
