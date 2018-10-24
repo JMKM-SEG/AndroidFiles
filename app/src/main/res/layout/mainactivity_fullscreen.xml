@@ -68,8 +68,7 @@
             android:id="@+id/background"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:adjustViewBounds="false"
-            android:background="@drawable/tools" />
+            android:adjustViewBounds="false" />
 
         <TextView
             android:id="@+id/en-tete"
