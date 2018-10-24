@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_01);
     }
 
+
+
     public void onRadioButtonClicked(View view) {
         // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
@@ -52,5 +54,7 @@ public class MainActivity extends AppCompatActivity {
             startActivityForResult(intent, 0);
         }
     }
+
+
 
 }

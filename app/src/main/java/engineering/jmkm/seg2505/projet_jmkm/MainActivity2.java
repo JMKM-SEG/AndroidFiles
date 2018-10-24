@@ -8,14 +8,15 @@ import android.content.DialogInterface;
 import android.widget.Button;
 import android.widget.EditText;
 import android.view.View;
+import android.widget.TextView;
 
 public class MainActivity2 extends AppCompatActivity {
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_02);
+
 
         final EditText et=(EditText) findViewById(R.id.editText1);
         final EditText es=(EditText) findViewById(R.id.editText3);
@@ -29,15 +30,20 @@ public class MainActivity2 extends AppCompatActivity {
                 intent.putExtra("theTexts", es.getText().toString());
                 startActivity(intent);
 
-
             }
         });
+
+
     }
+
+
+
 
     public void createAccount(View view) {
 
         Intent intent = new Intent(getApplicationContext(), MainActivity5.class);
         startActivityForResult(intent, 0);
+
 
     }
 

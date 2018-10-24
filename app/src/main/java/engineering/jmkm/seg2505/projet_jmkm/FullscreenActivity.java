@@ -20,6 +20,10 @@ import android.widget.Button;
  * status bar and navigation/system bar) with user interaction.
  */
 public class FullscreenActivity extends AppCompatActivity {
+
+
+
+
     /**
      * Whether or not the system UI should be auto-hidden after
      * {@link #AUTO_HIDE_DELAY_MILLIS} milliseconds.
@@ -94,6 +98,9 @@ public class FullscreenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
+
+
         setContentView(R.layout.mainactivity_fullscreen);
 
         mVisible = true;
@@ -105,6 +112,7 @@ public class FullscreenActivity extends AppCompatActivity {
         mContentView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 toggle();
             }
         });
@@ -115,20 +123,28 @@ public class FullscreenActivity extends AppCompatActivity {
         findViewById(R.id.btn00).setOnTouchListener(mDelayHideTouchListener);
         findViewById(R.id.btn01).setOnTouchListener(mDelayHideTouchListener);
 
-        Button button;
+        Button button, button2;
 
         // Locate the button in activity_main.xml
         button = findViewById(R.id.btn00);
+        button2 = findViewById(R.id.btn01);
+        button2.setEnabled(false);
 
         // Capture button clicks
         button.setOnClickListener(new OnClickListener() {
             public void onClick(View arg0) {
-
                 // Start NewActivity.class
                 Intent myIntent = new Intent(FullscreenActivity.this, MainActivity.class); startActivity(myIntent);
+
             }
+
         });
+
+
     }
+
+
+
 
 
     @Override
