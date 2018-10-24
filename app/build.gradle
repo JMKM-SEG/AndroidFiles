@@ -5,7 +5,7 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "engineering.jmkm.seg2505.projet_jmkm"
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -31,6 +31,6 @@ dependencies {
     implementation 'com.google.firebase:firebase-core:16.0.4'
     implementation 'com.google.firebase:firebase-database:16.0.3'
     implementation 'org.apache.commons:commons-lang3:3.8.1'
-    implementation "com.wajahatkarim3.easyvalidation:easyvalidation-core:1.0.1"
+    implementation 'com.emmasuzuki:easyform:1.2.1@aar'
 }
 apply plugin: 'com.google.gms.google-services'

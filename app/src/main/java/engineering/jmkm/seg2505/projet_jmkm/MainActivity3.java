@@ -11,6 +11,9 @@ import android.widget.EditText;
 
 public class MainActivity3 extends AppCompatActivity {
 
+    private EditText emailEditText;
+    private EditText passEditText;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,19 +22,35 @@ public class MainActivity3 extends AppCompatActivity {
 
         final EditText et=(EditText) findViewById(R.id.editText6);
         final EditText es=(EditText) findViewById(R.id.editText8);
-        Button bt=(Button) findViewById(R.id.btn06);
-        bt.setOnClickListener(new View.OnClickListener() {
+        emailEditText = (EditText) findViewById(R.id.editText9);
+        passEditText = (EditText) findViewById(R.id.editText10);
 
-            @Override
+        findViewById(R.id.btn06).setOnClickListener(new View.OnClickListener() {
+
             public void onClick(View arg0) {
-                Intent intent=new Intent(MainActivity3.this,MainActivity5.class);
-                intent.putExtra("theText", et.getText().toString());
-                intent.putExtra("theTexts", es.getText().toString());
-                startActivity(intent);
+
+                final String email = emailEditText.getText().toString();
+                if (!fieldValidation.isValidEmail(email)) {
+                    emailEditText.setError("Invalid Email. ");
+                }
+
+                final String pass = passEditText.getText().toString();
+                if (!fieldValidation.isValidPassword(pass)) {
+                    passEditText.setError("Invalid Password. Must contain at least 6 alphanumerical characters ");
+                }
+
+                if (fieldValidation.isValidEmail(email) && fieldValidation.isValidPassword(pass)){
+                    Intent intent=new Intent(MainActivity3.this,MainActivity5.class);
+                    intent.putExtra("theText", et.getText().toString());
+                    intent.putExtra("theTexts", es.getText().toString());
+                    startActivity(intent);
+                }
+
             }
         });
-    }
 
+
+    }
     public void createAccount(View view) {
         Intent intent = new Intent(getApplicationContext(), MainActivity5.class);
         startActivityForResult(intent, 0);
