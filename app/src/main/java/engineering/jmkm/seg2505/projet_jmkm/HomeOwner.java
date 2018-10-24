@@ -9,5 +9,10 @@ public class HomeOwner extends UserAccount {
     public void researchServiceProvider(){
 
     }
+    public void takeAppointment(ServiceProvider serviceProvider){
 
+    }
+    public void setRate(ServiceProvider serviceprovider){
+
+    }
 }
