@@ -11,13 +11,12 @@
          is needed to present your content, e.g. VideoView, SurfaceView,
          TextureView, etc. -->
 
-    <TextView
+    <ImageView
         android:id="@+id/fullscreen_content"
-        android:layout_width="349dp"
-        android:layout_height="64dp"
-        android:gravity="center"
-        android:keepScreenOn="true"
-        android:textAppearance="@style/TextAppearance.AppCompat" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="false"
+        android:background="@drawable/tools" />
 
     <!-- This FrameLayout insets its children based on system windows using
          android:fitsSystemWindows. -->
@@ -26,14 +25,16 @@
         android:id="@+id/btn00"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="170dp"
         android:layout_weight="1"
         android:background="@color/colorAccent"
         android:onClick="SignUp"
         android:text="Sign up  "
-        tools:ignore="OnClick"
-        android:layout_marginStart="50dp" />
+        android:textAllCaps="true"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        tools:ignore="OnClick" />
 
     <Button
         android:id="@+id/btn01"
@@ -41,9 +42,9 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="320dp"
+        android:background="@color/colorAccent"
         android:onClick="signIn"
         android:text="Sign in "
-        android:background="@color/colorAccent"
         tools:ignore="OnClick" />
 
     <FrameLayout
@@ -64,22 +65,17 @@
 
         </LinearLayout>
 
-        <ImageView
-            android:id="@+id/background"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:adjustViewBounds="false" />
-
         <TextView
             android:id="@+id/en-tete"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="117dp"
+            android:fontFamily="serif"
             android:lineSpacingExtra="12sp"
-            android:text="Bienvenue au meilleur service de réparation ménagère!"
+            android:text="  Bienvenue au meilleur service de reparation menagere!"
             android:textAllCaps="false"
             android:textColor="@color/colorAccent"
-            android:textSize="24sp"
-            android:textStyle="bold|italic" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
     </FrameLayout>
 
 </FrameLayout>

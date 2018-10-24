@@ -22,6 +22,18 @@ public class fieldValidation {
         Matcher matcher = pattern.matcher(email);
         return matcher.matches();
     }
-
+    public static boolean isValidAdminUser(String userName){
+        if (userName != "admin"){
+            return false;
+        }else{
+            return true;
+        }
+    }
+    public static boolean isValidAdminPass(String pass){
+        if (pass == "admin" && pass.length()>6){
+            return true;
+        }
+        return false;
+    }
 
 }
