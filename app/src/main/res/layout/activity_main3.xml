@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Main3Activity">
+    android:background="@drawable/wood"
+    tools:context=".MainActivity3">
 
     <TextView
         android:id="@+id/textView8"
@@ -36,6 +37,7 @@
         android:layout_marginRight="138dp"
         android:layout_marginBottom="57dp"
         android:text="HOME OWNER"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -141,10 +143,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="85dp"
         android:layout_marginLeft="85dp"
-        android:layout_marginTop="14dp"
         android:layout_marginEnd="84dp"
         android:layout_marginRight="84dp"
         android:layout_marginBottom="23dp"
+        android:background="@color/colorAccent"
         android:onClick="createAccount"
         android:text="Create"
         app:layout_constraintBottom_toBottomOf="parent"
