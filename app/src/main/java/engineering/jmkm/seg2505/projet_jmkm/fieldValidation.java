@@ -25,12 +25,12 @@ public class fieldValidation {
     public static boolean isValidAdminUser(String userName){
         if (userName != "admin"){
             return false;
-        }else{
-            return true;
         }
+        return true;
+
     }
     public static boolean isValidAdminPass(String pass){
-        if (pass == "admin" && pass.length()>6){
+        if (pass == "admin" ){
             return true;
         }
         return false;
