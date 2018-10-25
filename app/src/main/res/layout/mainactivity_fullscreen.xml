@@ -45,6 +45,8 @@
         android:background="@color/colorAccent"
         android:onClick="SignIn"
         android:text="Sign in "
+        android:textAllCaps="true"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
         tools:ignore="OnClick" />
 
     <FrameLayout
@@ -71,7 +73,7 @@
             android:layout_height="117dp"
             android:fontFamily="serif"
             android:lineSpacingExtra="12sp"
-            android:text="  Bienvenue au meilleur service de reparation menagere!"
+            android:text="  Bienvenue au meilleur service de réparation ménagère!"
             android:textAllCaps="false"
             android:textColor="@color/colorAccent"
             android:textSize="20sp"
