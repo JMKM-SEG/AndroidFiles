@@ -4,12 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context=".MainActivity2">
 
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/wood"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -30,12 +32,14 @@
             android:layout_marginBottom="475dp"
             android:text="REGISTRATION"
             android:textAppearance="@android:style/TextAppearance.Holo.Large"
+            android:textColor="@color/colorAccent"
             android:textSize="35sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="0.0"
+            tools:textColor="@color/common_google_signin_btn_text_dark_default" />
 
         <TextView
             android:id="@+id/textView9"
@@ -48,11 +52,13 @@
             android:layout_marginRight="138dp"
             android:layout_marginBottom="57dp"
             android:text="ADMINISTRATOR"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView8"
-            app:layout_constraintVertical_bias="0.0"/>
+            app:layout_constraintVertical_bias="0.0" />
 
 
         <EditText
@@ -69,6 +75,8 @@
             android:ems="10"
             android:hint="First name "
             android:inputType="textCapWords|textPersonName"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/editText2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -89,6 +97,7 @@
             android:ems="10"
             android:hint="Last name "
             android:inputType="textCapWords|textPersonName"
+            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/editText4"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -108,6 +117,7 @@
             android:layout_marginBottom="8dp"
             android:ems="10"
             android:hint="Username"
+            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/editText5"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -127,6 +137,7 @@
             android:ems="10"
             android:hint="Email"
             android:inputType="textEmailAddress"
+            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/editText3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -146,6 +157,7 @@
             android:ems="10"
             android:hint="Password"
             android:inputType="textPassword"
+            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/btn05"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -157,14 +169,16 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="85dp"
             android:layout_marginLeft="85dp"
-            android:layout_marginTop="14dp"
             android:layout_marginEnd="84dp"
             android:layout_marginRight="84dp"
             android:layout_marginBottom="23dp"
+            android:background="@color/colorAccent"
             android:onClick="createAccount"
             android:text="Create"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="OnClick" />
     </android.support.constraint.ConstraintLayout>
 </android.support.constraint.ConstraintLayout>
