@@ -4,14 +4,13 @@ package engineering.jmkm.seg2505.projet_jmkm;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 
-import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
 
 public class ServiceProvider extends UserAccount {
 
-    private  Map<String,String[][]> availability;
+    private Map<String, String> availability;
 
     public ServiceProvider(String firstName,String lastName, String eMail,String phoneNumber, String userName, String nameOfCountry, String nameOfCity){
         super(firstName,lastName, eMail,phoneNumber, userName, nameOfCountry, nameOfCity);
@@ -41,8 +40,8 @@ public class ServiceProvider extends UserAccount {
     // print all availabilities
     public String toString(){
         System.out.println("Availabilities of << " + this.getUserName() +" >> ");
-        Set<Map.Entry<String, String[][]>> setAvailability = availability.entrySet();
-        for (Map.Entry<String, String[][]> e : setAvailability) {
+        Set<Map.Entry<String, String>> setAvailability = availability.entrySet();
+        for (Map.Entry<String, String> e : setAvailability) {
             System.out.println(e.getKey() + " : " + e.getValue());
         }
         return " ";
