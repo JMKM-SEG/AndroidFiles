@@ -18,9 +18,11 @@ public class ServiceProvider extends UserAccount {
 
         availability = new LinkedHashMap<>();
     }
+    // Adding new availability
     public void addAvailability(String day, String time){
         availability.put(day,time);
     }
+    // Delete an availability
     public void deleteAvailability(String day){
         availability.remove(day);
     }
